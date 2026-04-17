@@ -14,5 +14,7 @@ export default defineConfig({
     watch: {
       usePolling: true, // WSL/Windows環境でのファイル変更検知を有効にする
     },
+	// 公開時のサブディレクトリを指定
+  	base: '/tools/frontend/',
   },
 })
