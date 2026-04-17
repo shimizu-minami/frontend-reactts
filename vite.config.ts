@@ -4,7 +4,8 @@ import tailwindcss from '@tailwindcss/vite' // 追加
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
+	base: '/tools/frontend/',
+	plugins: [
 	react(),
 	tailwindcss(), // 追加
 ],
@@ -14,7 +15,5 @@ export default defineConfig({
     watch: {
       usePolling: true, // WSL/Windows環境でのファイル変更検知を有効にする
     },
-	// 公開時のサブディレクトリを指定
-  	base: '/tools/frontend/',
   },
 })
